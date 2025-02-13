@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Local.css">
+</head>
+<body>
+    <div style="display: flex; gap: 12px; margin: 24px;" >
+        <button onclick="attribuerThemeSombre()" style="border-radius: 12px; background-color: black; color: white;">
+            Sombre
+        </button>
+        <button onclick="attribuerThemeClair()" style="border-radius: 12px; background-color: white; color: black;">
+            Clair
+        </button>
+    </div>
+    <br>   
+    <button onclick="afficherThemeActuel()" style="border-radius: 12px;">
+        Afficher le theme actuel
+    </button>
+    
+</body>
+<script>
+    function afficherThemeActuel(){
+        let theme = localStorage.getItem("theme")
+        console.log(theme)
+    }
+    function attribuerThemeSombre() {
+        localStorage.setItem("theme", "sombre")
+    }
+
+    function attribuerThemeClair() {
+        localStorage.setItem("theme", "clair")
+    }
+</script>
+</html>

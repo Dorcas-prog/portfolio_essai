@@ -11,9 +11,9 @@ header {
     color: white;
     background-color: black;
     padding: 30px;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 #prénom {
@@ -21,14 +21,19 @@ header {
 
 }
 
-nav {
-    width: 40%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* :display: flex;
 list-style: none;
 justify-content: space-evenly;
 } */
+
+nav{
+    width: 40%;
+}
 
 ul {
     display: flex;
@@ -59,6 +64,7 @@ section {
     height: 50%;
     padding: 3rem 4rem;
     margin-bottom: 25px;
+    list-style: none;
 }
 
 #P1 {
@@ -76,6 +82,53 @@ h1 span {
     font-size: 4rem;
 }
 
+.section1 {
+    height: 100%;
+    width: 100%;
+    margin-top:;
+}
+
+.competences {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.competence{
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.image_competence{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.block_competence_image{
+    height: 300px;
+    margin-top: 2rem;
+}
+
+
+#titre_competence{
+    font-size: xx-large;
+    margin: 20px;
+}
+.footer{
+    padding: 25px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.para_competence{
+    margin-top: 2rem;
+}
 .section1 {
     height: 100%;
     width: 100%;
@@ -105,10 +158,4 @@ justify-content: space-between;
 
 .block_competence_image{
     height: 300px;
-}
-
-
-#titre_competence{
-    font-size: xx-large;
-    margin: 20px;
 }
